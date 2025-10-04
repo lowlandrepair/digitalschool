@@ -1,3 +1,6 @@
+$(window).ready(function(){
+    alert("jquery is not woking bro")
+})
 function openMenu(){
     var links = document.getElementById("links");
     if(links.classList.contains("show")){

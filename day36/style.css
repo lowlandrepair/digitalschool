@@ -1,83 +1,136 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* jQuery Demo Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem;
 }
 
-nav {
+#heading {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.para {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+ul li {
+    background-color: white;
     padding: 1rem 2rem;
-    background-color: #333;
-    color: white;
-    position: relative; /* so mobile dropdown positions relative to nav */
-}
-
-/* Shift logo slightly to the right */
-.logo {
-    margin-left: 12px;
-}
-
-/* Keep logo and hamburger button side-by-side */
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#links {
-    display: flex;
-    gap: 2rem;
-}
-
-#links a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-#links a:hover {
-    background-color: #555;
-}
-
-.icon {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
+    border-radius: 8px;
     cursor: pointer;
-    padding: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Ensure Font Awesome bars icon inherits size/color */
-.icon .fa {
-    font-size: 1.5rem;
-    color: inherit;
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    background-color: #f0f0f0;
 }
 
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-    .icon {
-        display: block;
-    }
-    
-    #links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        flex-direction: column;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    
-    #links.show {
-        display: flex;
-    }
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#h1, #result {
+    text-align: center;
+    color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+#mydiv {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#mydiv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+#mydiv span {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    cursor: help;
+}
+
+.clickd {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+    color: white !important;
+}
+
+.clickd span {
+    color: white !important;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden.show {
+    display: block;
+}
+
+.hidden p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hidden.show p {
+    display: block;
+}
+
+
